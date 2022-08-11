@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
   <link href="css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,18 +12,26 @@
 </head>
 <body>
   
-  <div class="bg-heroSm bg-no-repeat bg-origin-border bg-cover absolute w-full">
-      <nav class="bg-transparent min-w-full flex relative justify-between items-center md:flex m-auto md:flex-row uppercase p-4 ">
+  <div class="bg-heroSm bg-no-repeat bg-origin-border bg-cover absolute w-full h-screen">
+      <!-- nav start -->
+      <nav class="bg-transparent min-w-full flex relative justify-between items-center md:flex m-auto md:flex-row uppercase p-4  ">
         <div class="justify-start ">
-          <img src="./src/images/logo.png" alt="brand" class="w-40">
+          <img src="./src/images/logo.png" alt="brand" class="w-[300px]">
         </div>
-        <div class="hidden md:flex justify-around items-center text-1xl space-x-2 md:space-x-4">
+        <div class="hidden md:flex justify-around items-center relative text-1xl space-x-2 md:space-x-4">
           <a href="index.html" class="text-darkGreen font-semibold hover:text-brightRed">home</a>
           <a href="about.html" class="text-darkGreen font-semibold hover:text-brightRed">about</a>
           <a href="blog.html" class="text-darkGreen font-semibold hover:text-brightRed ">Blog</a>
-          <a href="heritage.html" class="text-darkGreen font-semibold hover:text-brightRed">our heritage</a>
+          <a href="#" class="h-btn text-darkGreen font-semibold hover:text-brightRed flex flex-col">our heritage
+            <div  class="heritage hidden flex-col right-0 top-10 absolute drop-shadow-xl bg-white ">
+              <p class="text-white text-center font-semibold bg-gray px-2 py-1">our heritage</p>
+              <a href="gallery.html" class="text-darkGreen font-semibold text-center hover:font-bold hover:text-brightRed px-2 py-2">gallery</a>
+              <a href="history.html" class="text-darkGreen font-semibold text-center hover:font-bold hover:text-brightRed px-2 py-2">our history</a>
+              <a href="sons.html" class="text-darkGreen font-semibold text-center hover:font-bold hover:text-brightRed px-2 py-2">sons & daughters</a>
+            </div>
+          </a>
         </div>
-        <div class="hidden mb-[-10rem] justify-end md:flex">
+        <div class="hidden hover:font-bold text-2xl hover:text-white justify-end md:flex">
           <img src="./src/images/brand-img.png" alt="brand" class=" w-40">
         </div>
         <!-- hamboger menu -->
@@ -34,21 +43,29 @@
           </button>
   
           <!-- mobile menu -->
-          <div id="menu" class="hidden absolute mt-16 py-8 bg-white flex-col self-center items-center font-bold text-1xl left-7 space-y-4 right-10 top-6 md:space-x-4 sm:max-w-sm sm:mx-10 drop-shadow-xl ">
+          <div id="menu" class="hidden absolute mt-24 py-8 bg-white flex-col self-center items-center font-bold text-1xl left-4 space-y-4 right-4 top-6 md:space-x-4 sm:mx-10 drop-shadow-xl ">
             <a href="index.html" class="text-darkGreen font-semibold hover:text-brightRed">home</a>
             <a href="about.html" class="text-darkGreen font-semibold hover:text-brightRed">about</a>
             <a href="blog.html" class="text-darkGreen font-semibold hover:text-brightRed ">Blog</a>
-            <a href="heritage.html" class="text-darkGreen font-semibold hover:text-brightRed">our heritage</a>
+            <a href="#" class="mobile-btn text-darkGreen font-semibold hover:text-brightRed flex flex-col relative ">our heritage
+              <div  class="bobile-heritage hidden flex-col right-0 top-10 absolute drop-shadow-xl bg-white">
+                <p class="text-white text-center font-semibold bg-gray px-2 py-1">our heritage</p>
+                <a href="gallery.html" class="text-darkGreen font-semibold text-center hover:font-bold hover:text-brightRed px-2 py-2">gallery</a>
+                <a href="history.html" class="text-darkGreen font-semibold text-center hover:font-bold hover:text-brightRed px-2 py-2">our history</a>
+                <a href="sons.html" class="text-darkGreen font-semibold text-center hover:font-bold hover:text-brightRed px-2 py-2">sons & daughters</a>
+              </div>
+            </a>
           </div>
         </div>
       </nav>
+      <!-- nav end -->
         <!-- hero section -->
         
         <div class=" mx-auto p-8 flex flex-col justify-center items-center">
             <div class="text-darkGreen capitalize text-5xl text-center font-normal mb-4">
                 <h2 class="title">blog</h2>
             </div>
-            <div class="grid grid-cols-1 mt-5 text-darkGreen gap-4 md:grid-cols-3 ">
+            <!-- <div class="grid grid-cols-1 mt-5 text-darkGreen gap-4 md:grid-cols-3 ">
                 <div class="flex flex-col m-3 border-2 rounded-md drop-shadow-lg w-[300px]">
                     <div class="">
                         <img src="./src/images/profile-img.png" class="w-full h-[200px]" alt="">
@@ -115,7 +132,7 @@
                         JAKLJVN;LKM’LNLBIOVJUFVUJNDFVI</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             </div>
         </div>
         <script src="./src/js/index.js"></script>
