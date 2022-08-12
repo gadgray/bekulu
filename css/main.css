@@ -1018,6 +1018,10 @@ video {
   width: 2.5rem;
 }
 
+.w-\[23rem\] {
+  width: 23rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -1154,6 +1158,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -1180,6 +1188,10 @@ video {
 
 .border-t {
   border-top-width: 1px;
+}
+
+.border-l {
+  border-left-width: 1px;
 }
 
 .border-solid {
